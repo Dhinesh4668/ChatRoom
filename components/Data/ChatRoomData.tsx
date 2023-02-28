@@ -2,13 +2,18 @@ export default [{
   id: '1',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Dhinesh Kumar',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
   }, {
     id: 'u2',
-    name: 'Elon Musk',
+    name: 'Moorthy',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png',
-  }],
+  },{
+    id: 'u2',
+    name: 'Preethika',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png',
+  }
+  ],
   lastMessage: {
     id: 'm1',
     content: 'btw, SpaceX is interested in buying notJust.dev!',
@@ -19,16 +24,17 @@ export default [{
   id: '231231231231231',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Dhinesh Kumar',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
   }, {
     id: 'u3',
-    name: 'Jeff',
+    name: 'Dhinesh Kumar',
+    newMessages: '3',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg',
   }],
   lastMessage: {
     id: 'm2',
-    content: 'Why did you reject our offer?',
+    content: 'This is AES based Chat Application devloped by Dhinesh ',
     createdAt: '2020-10-02T15:40:00.000Z',
   }
 }, {
@@ -39,7 +45,7 @@ export default [{
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
   }, {
     id: 'u4',
-    name: 'Zuck',
+    name: 'Moorthi',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg',
   }],
   lastMessage: {
@@ -55,8 +61,8 @@ export default [{
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
   }, {
     id: 'u5',
-    name: 'Graham',
-    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/graham.jpg',
+    name: 'Preethika',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg',
   }],
   lastMessage: {
     id: 'm4',
@@ -67,7 +73,8 @@ export default [{
   id: '5',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Preethika',
+    newMessages: '2',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
   }, {
     id: 'u6',

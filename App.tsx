@@ -17,13 +17,13 @@ import awsconfig from './src/aws-exports';
 // import navigation
 import {NavigationContainer} from "@react-navigation/native";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-
+import Onbord from './components/onbord/Onbord';
 import Ionicons from "react-native-vector-icons/Ionicons";
 // amplify config
 Amplify.configure(awsconfig);
 
 
-const Tab=createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 // main app
 const App = () => {
   return (
@@ -35,17 +35,18 @@ const App = () => {
           tabBarIcon: ({focused, color, size}) => {
             let iconName;
             if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
+              iconName = focused ? 'ios-call' : 'ios-call-outline';
+            } else if (route.name === "settings") {
+              iconName = focused ? 'cog' : 'cog-outline';
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: 'tomato',
+          tabBarActiveTintColor: 'green',
           tabBarInactiveTintColor: 'gray',
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
+
       </Tab.Navigator>
     </NavigationContainer>
 
@@ -55,10 +56,11 @@ const App = () => {
 
 // HomeScreen
 function HomeScreen() {
-  return(
+  return (
     <>
-    <Text>Home</Text>
+      <Text>Home</Text>
     </>
   )
 }
+
 export default App;

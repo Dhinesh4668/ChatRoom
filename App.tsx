@@ -1,21 +1,35 @@
-import { Text, View } from 'react-native'
-import React from 'react'
-import Onbord from './components/onbord/Onbord';
-// aws amplify config
-import { Amplify } from 'aws-amplify';
-import awsconfig from './src/aws-exports';
-Amplify.configure(awsconfig)
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {Chat, Groups, Options} from './src/Screens/index';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-
-
+const Tab = createBottomTabNavigator();
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-      <Onbord />
-    </View>
-  )
-}
-
-export default App
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Tab.Navigator
+          screenOptions={{
+            headerShown: false,
+            tabBarShowLabel: true,
+            tabBarStyle: {
+              bottom: 0,
+              height: 60,
+            },
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontWeight: '500',
+              color: '#a191cc',
+            },
+          }}>
+          <Tab.Screen name="Massage" component={Chat} />
+          <Tab.Screen name="Groups" component={Groups} />
+          <Tab.Screen name="Settings" component={Options} />
+        </Tab.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
+  );
+};
+export default App;

@@ -32,6 +32,7 @@ function Onbord() {
           },
           {
             backgroundColor: '#fff',
+            // eslint-disable-next-line react/react-in-jsx-scope
             image: <Image source={require(Speed)} />,
             title: 'Onboarding',
             subtitle: 'Done with React Native Onboarding Swiper',

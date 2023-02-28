@@ -12,7 +12,7 @@ const App = () => {
       <NavigationContainer>
         <Tab.Navigator
           screenOptions={{
-            headerShown: false,
+            headerShown: true,
             tabBarShowLabel: true,
             tabBarStyle: {
               bottom: 0,

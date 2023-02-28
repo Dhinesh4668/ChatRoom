@@ -35,7 +35,7 @@ export default [{
   lastMessage: {
     id: 'm2',
     content: 'This is AES based Chat Application devloped by Dhinesh ',
-    createdAt: '2020-10-02T15:40:00.000Z',
+    createdAt: '2023-01-02T15:40:00.000Z',
   }
 }, {
   id: '3',

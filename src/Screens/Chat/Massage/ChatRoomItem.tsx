@@ -1,7 +1,7 @@
 import react from 'react';
 import {Image, Text, View, StyleSheet} from 'react-native';
 
-const ChatRoomItem = () => {
+export default function ChatRoomItem({chatRoom}) {
   return (
     <View style={styles.container}>
       <Image
@@ -22,7 +22,6 @@ const ChatRoomItem = () => {
     </View>
   );
 };
-export default ChatRoomItem;
 // stylesheet
 const styles = StyleSheet.create({
   container: {

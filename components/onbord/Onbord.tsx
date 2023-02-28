@@ -1,6 +1,11 @@
 import react from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import Onboarding from 'react-native-onboarding-swiper';
+import  Cloude from '../../src/assets/cloude.png';
+import  Connect from '../../src/assets/connect.png';
+import  Secure from '../../src/assets/secure.png';
+import  Speed from '../../src/assets/speed.png';
+
 
 function Onbord() {
   return (
@@ -9,13 +14,25 @@ function Onbord() {
         pages={[
           {
             backgroundColor: '#fff',
-            image: <Image source={require()} />,
+            image: <Image source={require(Cloude)} />,
             title: 'Onboarding',
             subtitle: 'Done with React Native Onboarding Swiper',
           },
           {
             backgroundColor: '#fff',
-            image: <Image source={require()} />,
+            image: <Image source={require(Connect)} />,
+            title: 'Onboarding',
+            subtitle: 'Done with React Native Onboarding Swiper',
+          },
+          {
+            backgroundColor: '#fff',
+            image: <Image source={require(Secure)} />,
+            title: 'Onboarding',
+            subtitle: 'Done with React Native Onboarding Swiper',
+          },
+          {
+            backgroundColor: '#fff',
+            image: <Image source={require(Speed)} />,
             title: 'Onboarding',
             subtitle: 'Done with React Native Onboarding Swiper',
           },

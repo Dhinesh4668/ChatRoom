@@ -18,12 +18,12 @@ const App = () => {
           screenOptions={{
             headerShown: true,
             tabBarShowLabel: true,
-            unmountOnBlur: true,
             tabBarStyle: {
               bottom: 0,
               height: 60,
               gap: 10,
               backgroundColor: '#e1ebf8',
+
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {

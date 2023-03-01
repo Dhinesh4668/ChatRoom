@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import {Image, Text, View, StyleSheet} from 'react-native';
 
 export default function ChatRoomItem({chatRoom}) {
@@ -12,11 +12,11 @@ export default function ChatRoomItem({chatRoom}) {
         style={styles.image}
       />
       {/*new massage bage */}
-      {chatRoom.newMessages ? (
+      {chatRoom.newMessages &&
         <View style={styles.badgeContainer}>
           <Text style={styles.badgeText}>{user.newMessages}</Text>
         </View>
-      ) : null}
+      }
 
       {/*massage container*/}
       <View style={styles.right}>

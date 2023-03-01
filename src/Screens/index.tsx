@@ -1,4 +1,4 @@
 import Chat from './Chat/Chat';
 import Options from './Settings/Settings';
-import Groups from './Groups/Groups';
-export {Chat, Options, Groups};
+import ChatRoomMassageScreen from './ChatRoomMassage/ChatRoomMassageScreen';
+export {Chat, Options, ChatRoomMassageScreen};

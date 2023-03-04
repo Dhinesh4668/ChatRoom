@@ -23,7 +23,6 @@ const App = () => {
               height: 60,
               gap: 10,
               backgroundColor: '#e1ebf8',
-
             },
             headerTitleAlign: 'center',
             headerTitleStyle: {

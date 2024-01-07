@@ -6,17 +6,21 @@ this is my collage mini project
 
 ### run this project
 1. clone this repo
-  ```cmd
+  ``cmd
   git clone https://github.com/Dhinesh4668/ChatRoom.git
+  ``
 
-2. navigate this project:
-  ```cmd
+3. navigate this project:
+  ``cmd
   cd ChatRoom
+  ``
 
 3. Install srs:
-  ```cmd
+  ``cmd
   npm i
+  ``
 
-4. Run devices:
-  ```cmd
+5. Run devices:
+  ``cmd
   npm start
+  ``
